@@ -1,4 +1,5 @@
-<! Try to write a html file>
+
+<!DOCTYPE HTML>
 <html>
 <body>
 
@@ -95,12 +96,13 @@ Here is a table
 <br>
 <h2>侧栏标题</h2>
 <h2>侧栏注册标题</h3>
+</table>
 <form action>
 邮箱地址:
 <input type="text" name="e-mail adress"><br>
 邮箱地址请按要求输入<br>
-请输入密码:<intput type="text" name="key"><br>
-请确认密码：<intput type="text" name="key"><br>
+请输入密码: <input type="text" name="key"><br>
+请确认密码：<input type="text" name="key"><br>
 密码为6-16为字符
 <br>
 性别：<input type="radio" name="sex" value="male" checked>男
@@ -109,7 +111,7 @@ Here is a table
 爱好：<input type="radio" name="hobbies" value="sports">sports
      <input type="radio" name="hobbies" value="art">art
      <input type="radio" name="hobbies" value="science">science<br>
-个人简介：<textarea rows="5" cols="25"></textarea<br>
+个人简介：<textarea rows="5" cols="25">个人简介</textarea><br>
 <input type="submit" value="确认提交">
 </form>
 <br>
