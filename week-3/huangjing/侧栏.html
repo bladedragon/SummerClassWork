@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*×ó²à±ßÀ¸*/
+        a{
+            text-decoration: none;
+        }
+        .sideBar {
+            position: fixed;
+            left: 20px;
+            top: 35%;
+        }
+        .sideBar .ftName {
+            position: relative;
+        }
+        .sideBar dl dd {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background-color: #646577;
+            border-bottom: solid 1px #999;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center 20%;
+            cursor: pointer;
+        }
+        .sideBar dd span {
+            color: #fff;
+            display: block;
+            padding-top: 32px;
+        }
+        .sideBar .words span {
+            padding-top: 22px;
+        }
+        .sideInfo {
+            position: absolute;
+            left: 90px;
+            top: 0;
+            width: 250px;
+            background-color: #646577;
+            display: none;
+            padding: 0 10px;
+        }
+        .words .sideInfo {
+            padding: 6px 10px;
+        }
+        .sideInfo a, .sideInfo p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--×ó²à±ßÀ¸-->
+    <div class="sideBar">
+        <dl>
+            <dd class="ftName consult">
+                <a href="http://www.baidu.com/">
+                    <span>°Ù¶È1</span>
+                </a>
+                <div class="sideInfo">
+                    
+                </div>
+            </dd>
+            <dd class="ftName words">
+                <a href="http://www.baidu.com/">
+                    <span>°Ù¶È<br>2</span>
+                </a>
+                <div class="sideInfo">
+                    
+                </div>
+            </dd>
+            <dd class="ftName quote">
+                <a href="http://www.4399.com/">
+                    <span>°Ù¶È3</span>
+                </a>
+                <div class="sideInfo">
+                    
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        /*²à±ßÀ¸*/
+        $('.consult').hover(function(){
+            if($('.consult .sideInfo').is(':hidden')){
+                $('.consult .sideInfo').show();
+            }else{
+                $('.consult .sideInfo').hide();
+            }
+        });
+        $('.words').hover(function(){
+            if($('.words .sideInfo').is(':hidden')){
+                $('.words .sideInfo').show();
+            }else{
+                $('.words .sideInfo').hide();
+            }
+        });
+        $('.quote').hover(function(){
+            if($('.quote .sideInfo').is(':hidden')){
+                $('.quote .sideInfo').show();
+            }else{
+                $('.quote .sideInfo').hide();
+            }
+        });
+    </script>
+</body>
+</html>
