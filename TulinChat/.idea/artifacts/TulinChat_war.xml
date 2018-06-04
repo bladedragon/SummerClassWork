@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="TulinChat:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="TulinChat.war">
-      <element id="artifact" artifact-name="TulinChat:war exploded" />
-    </root>
-  </artifact>
-</component>
