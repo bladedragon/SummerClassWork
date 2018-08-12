@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url:
+    driver-class-name:
+    username:
+    password:
+    show-sql: true
+
+mybatis:
+  type-aliases-package: team.redrock.classwork03.entitiy
+logging:
+  path:
+  level:
+    team:
+       redrock:
+         thirdclasswork:
+           mapper: debug
